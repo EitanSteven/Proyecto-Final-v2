@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box; /* Para que el espaciado interno y externo sumen uno solo */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    font-size: 1em;
+    font-family: 'Glass Antiqua', cursive;
+    scroll-behavior: initial;
+}
+
+.nav__main__img {
+    max-height: 50px;
+    max-width: 50px;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/*  LEFT NAV  */
+
+.nav__main ul {
+    display: flex;
+}
+
+.nav__main ul li {
+    padding: 10px;
+}
+
+.nav__main ul.nav__main__menu {
+    flex: 1;
+    margin-left: 30px;
+}
+.nav__main ul li a {
+    padding: 4px;
+}
+.nav__main ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/*  H Showcase */
+
+.Hshowcase {
+    background: url('/images/SCIFI\ Sketch.jpg') top/cover fixed;
+    margin-top: 5rem;
+    height: 500px;
+    position: relative; 
+    display: flex;  /* Para poder modificar la posicion del contenido dentro */
+    justify-content: center;
+    align-items: center;
+}
+
+.Hshowcase::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(66, 66, 66, 0.5) ,rgb(20, 20, 20));
+}
+
+.Hshowcase__Info {
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: rgb(240, 209, 209);
+    margin: auto;
+}
+
+.HTitle {
+    line-height: 1;   
+    font-size: 4em;
+    font-family: 'Crimson Pro', serif;
+}
+
+.Hp {
+    line-height: 2;
+    font-size: 1.3em;
+    color: #3d738a;
+}
+
+/* Content */
+
+.Content {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+}
+
+/*.Reminder {
+    margin-top: 2em;
+    padding-left: 20px;
+    color: #fff;
+    position:;
+}*/
+
+.History {
+    text-align: center;
+    color: #fff;
+}
+
+.H__Title {
+    line-height: 4em;
+    font-family: 'Crimson Pro', serif;
+}
+
+.H__Lore {
+    max-width: 600px;
+    line-height: 2;
+    text-align: justify;
+    font-family: Quicksand;
+    font-size: 20px;
+}
