@@ -1,15 +1,37 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="Esta es mi pagina de contacto">
-    <title>contacto</title>
 
-    <!-- Style -->
-    <link rel="stylesheet" href="/public/stylesheets/contacto.css">
-</head>
-<body>
-    <h1>Contactoooooooo</h1>
-</body>
-</html>
+<div id="particles-js"></div> 
+
+{{> navBarOut}}
+
+<div class="formPage">
+        <form class="contact-form" action="/contacto" method="POST" >
+            <h1>Contactame</h1>
+            <!-- Nombre -->
+            <input type="text" name="name" placeholder="Nombre" title="El nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <!-- Apellido -->
+            <input type="text" name="lastname" placeholder="Apellido" title="El apellido solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <!-- Email -->
+            <input type="email" name="email" placeholder="Ingrese su Email" required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Ingrese un correo valido">
+            <!-- Asunto -->
+            <input type="text" name="subject" placeholder="Asunto" required title="El Asunto es Requerido">
+            <!-- Msj -->
+            <textarea name="comments" cols="30" rows="10" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$" required title="Tu comentario no debe ser mayor a 250 Caracteres"></textarea>
+            <!-- Enviar -->
+            <input type="submit" value="Enviar">
+        <!--
+                        <div class="contact-form-loader none">
+            <img src="./assets/Capsule-Loading.svg" alt="Cargando">
+        </div>
+        <div class="contact-form-response none">
+            <p>Los datos han sido enviados</p>
+        </div>
+        -->
+    </form>
+    <div class="formRes">
+        {{#if message}}
+            <p> {{message}} </p>
+        {{/if}}
+    </div>
+</div>
+
+<script src="/javascripts/validForm.js"></script>
