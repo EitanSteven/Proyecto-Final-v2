@@ -7,6 +7,8 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+
+
 /* GET contact page. */
 router.get('/contacto', function(req, res, next) {
   res.render('contacto');

@@ -1,0 +1,43 @@
+.AdminMain {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+input {
+    display: block;
+    margin: 10px 0 10px 0;
+    padding: 3px;
+}
+
+.AdminContainer input[type="submit"] {
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Glass Antiqua', cursive;
+
+    padding: 5px;
+    width: 125px;
+}
+
+.AdminContainer {
+    min-height: 250px;
+    min-width: 650px;
+    max-height: 350px;
+    max-width: 850px;
+
+    margin: 8rem auto 0 auto;
+    padding-left: 30px;
+    padding-top: 35px;
+    padding-bottom: 17px;
+
+    text-align: left;
+    border: solid 4px rgba(255, 255, 255, 0.090);
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.080);
+}
+
