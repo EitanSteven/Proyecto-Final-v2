@@ -7,8 +7,6 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-
-
 /* GET contact page. */
 router.get('/contacto', function(req, res, next) {
   res.render('contacto');
@@ -42,7 +40,6 @@ router.post('/contacto', async (req, res, next) => {
   res.render('contacto', {
     message: 'Mensaje enviado correctamente.'
   })
-
 })
 
 

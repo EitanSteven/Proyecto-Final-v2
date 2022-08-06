@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 04-08-2022 a las 16:45:54
+-- Tiempo de generación: 06-08-2022 a las 20:36:20
 -- Versión del servidor: 8.0.26
 -- Versión de PHP: 7.4.26
 
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `stardustcoincidence`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `novedades`
+--
+
+DROP TABLE IF EXISTS `novedades`;
+CREATE TABLE IF NOT EXISTS `novedades` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(250) NOT NULL,
+  `subtitulo` text NOT NULL,
+  `cuerpo` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+
+--
+-- Volcado de datos para la tabla `novedades`
+--
+
+INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`) VALUES
+(2, 'Titulo Dos', 'Sub titulo 2', 'Cuerpoooooooooooooooooooo 2'),
+(3, 'Titulo Tres', 'Sub Titulo Tres', 'Cuerpo Tres'),
+(4, 'Titulo cuatro', 'Sub Titulo cuatro', 'Cuerpo Cuatro'),
+(5, 'Elimina Este', 'Eliminado', 'a');
 
 -- --------------------------------------------------------
 
@@ -41,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES
 (1, 'Eitan', '81dc9bdb52d04dc20036dbd8313ed055'),
-(2, 'Usuario', '81dc9bdb52d04dc20036dbd8313ed055');
+(2, 'Usuario1', '81dc9bdb52d04dc20036dbd8313ed055');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
