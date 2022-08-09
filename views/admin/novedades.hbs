@@ -6,7 +6,7 @@
        <div class="add__news">
             <h1>Lista de Novedades</h1>
             <div class="add__news_BTN">
-                <a href="" class="add__news_a">NUEVO</a>
+                <a href="/admin/novedades/agregar" class="add__news_a">NUEVO</a>
             </div>
        </div>
        <div class="news__list">
@@ -16,7 +16,7 @@
             {{#each novedades}}
             <div class="news">
                 <div class="news id"><p>{{id}}</p></div><div class="news title">{{titulo}}</div><div class="news actions">
-                    <a href=""><i class="fa-solid fa-pen-to-square edit_BTN"></i></a>
+                    <a href="/admin/novedades/modificar/{{id}}"><i class="fa-solid fa-pen-to-square edit_BTN"></i></a>
                     <a href="/admin/novedades/delete/{{id}}"><i class="fa-solid fa-trash-can delete_BTN"></i></a>
                 </div>
             </div>

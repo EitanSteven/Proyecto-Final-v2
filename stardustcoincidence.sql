@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 06-08-2022 a las 20:36:20
+-- Tiempo de generación: 09-08-2022 a las 21:49:49
 -- Versión del servidor: 8.0.26
 -- Versión de PHP: 7.4.26
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `novedades` (
   `subtitulo` text NOT NULL,
   `cuerpo` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Volcado de datos para la tabla `novedades`
@@ -42,9 +42,8 @@ CREATE TABLE IF NOT EXISTS `novedades` (
 
 INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`) VALUES
 (2, 'Titulo Dos', 'Sub titulo 2', 'Cuerpoooooooooooooooooooo 2'),
-(3, 'Titulo Tres', 'Sub Titulo Tres', 'Cuerpo Tres'),
-(4, 'Titulo cuatro', 'Sub Titulo cuatro', 'Cuerpo Cuatro'),
-(5, 'Elimina Este', 'Eliminado', 'a');
+(3, 'Titulo Modificado', 'Sub Titulo TRES', 'Cuerpo TRES'),
+(10, 'Titulo Modificado', 'Subtitulo Modificado', 'Cuerpo Modificado');
 
 -- --------------------------------------------------------
 
